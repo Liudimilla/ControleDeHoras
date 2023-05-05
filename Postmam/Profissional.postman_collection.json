@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "3c05539f-65f4-42d5-b5e7-da2b6abed755",
+		"name": "Profissional",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "15802321"
+	},
+	"item": [
+		{
+			"name": "Buscar Profissionais",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Profissional Por Id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar dados",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": 8,\r\n        \"nome\": \"Laura\",\r\n        \"chaveM\": \"109\"\r\n        \r\n }"
+				},
+				"url": "http://localhost:8080/api/profissional/save"
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir Profissional",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/profissional/delete/4"
+			},
+			"response": []
+		}
+	]
+}
